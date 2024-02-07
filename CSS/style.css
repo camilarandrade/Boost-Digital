@@ -1,0 +1,1271 @@
+*{
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+
+/* MENU */
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    padding: 10px 20px;
+}
+
+.logo img {
+    max-width: 120px;
+    height: auto;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+#btn-responsivo {
+    display: none;
+}
+
+.submenu1 {
+    display: none;
+}
+
+nav {
+    flex: 1; /
+    
+}
+
+.seta {
+    margin-left: 8px;
+}
+
+
+nav ul li {
+    position: relative;
+    display: inline-block;
+    
+}
+
+nav ul li .submenu {
+    display: none; 
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%; 
+    font-size: 10px;
+    z-index: 1;
+    
+}
+
+nav ul li.active .submenu {
+    display: block; 
+    background-color: black;
+    border-radius: 5px;
+    
+}
+
+.submenu {
+    display: none;
+  }
+
+  .has-submenu:hover .submenu {
+    display: block;
+  }
+
+nav img {
+    width: 20px;
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+}
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content:right; 
+}
+
+nav li {
+    margin-right: 30px; 
+    font-size: 23px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+nav a:hover {
+color: #EB5C2C;
+transition: 0.4s;
+}
+
+.btn-contato {
+    background-color: #EB5C2C;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.btn-contato:hover {
+    background-color: white;
+    color: #EB5C2C;
+    transition: 0.2s;
+    
+}
+
+
+
+
+/* ALTERAÇÕES BANNER */
+
+h2 {
+    margin: 0;
+    margin-top: 60px;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    
+}
+
+#tituloprincipal {
+    width: 100%;
+    font-size: 40px;
+    text-align: left;
+    height: 100vh; 
+    color: white;
+   
+    position: absolute;
+    
+}
+
+#tituloprincipal h2 {
+    margin-left: 40px;
+}
+
+#tituloprincipal p {
+font-size: 22px;
+text-align: left;
+margin-left: 40px;
+
+}
+
+#tituloprincipal button {
+    margin-left: 40px;
+}
+
+.imagem img {
+    width: 100%; 
+    min-height: 50vh;
+}
+
+
+
+span {
+    color:#EB5C2C;
+}
+
+button {
+    background-color: #EB5C2C;
+    padding: 7px 20px;
+    border-radius: 22px;
+    color: white;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: 500;
+     
+}
+
+button:hover {
+    background-color: black;
+    color: #EB5C2C;
+    
+}
+
+/* QUEM SOMOS  */
+
+#quemsomos {
+    display: flex; 
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+.tituloquemsomos {
+    color: #EB5C2C;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    /* padding-top: 100px; */
+}
+
+.imgquemsomos {
+   margin-right: 30px;
+    text-align: center;
+    
+    
+    
+}
+.imgquemsomos img {
+    width: 380px;
+    height: 450px;
+    
+    
+}
+
+.txtquemsomos {
+   
+    font-size: 20px;
+    
+    
+}
+
+.txtquemsomos p {
+    width: 500px;
+    /* text-align: justify; */
+    
+    
+}
+
+/* NOSSOS SERVICOS */
+
+#servicos {
+    background-color: #EB5C2C;
+    justify-content: left;
+    width: 100%;
+    height: 1600px;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    
+    
+    
+}
+
+.tituloservicos {
+    color: white;
+    font-size: 30px;
+    margin-left: 60px;
+    padding-top: 20px;
+     
+    
+}
+
+#servico1, #servico2, #servico3, #servico4 {
+    width: 375px;
+    height: 545px;
+    border-radius: 24px;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    margin: 20px;
+    padding-top: 20px;
+   
+    
+}
+
+#servico1 p, #servico2 p, #servico3 p, #servico4 p {
+
+margin: 30px;
+}
+
+.blocos1, .blocos2 {
+    display: flex;
+    justify-content: center;
+
+}
+
+#servico2, #servico4 {
+    margin-top: 140px;
+    margin-bottom: 0;
+}
+
+#servicos button {
+    color:#EB5C2C;
+    background-color: black;
+    border: 2px solid white;
+    margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    
+    
+}
+
+#servicos button:hover {
+    color:white;
+    background-color: #EB5C2C;
+    transition: 0.2s;
+    border: none;
+    
+}
+
+.saibamais {
+    text-align: center;  
+}
+
+#servicos .saibamais button {
+    background-color: #fff;
+    color: #EB5C2C;
+    font-weight: bold;
+}
+
+    #servicos .saibamais button:hover {
+        background-color: black;
+        color: #EB5C2C;
+        
+}
+
+#servico1 {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    
+    
+}
+
+#servico1::before {
+    content: '';
+    position: absolute;
+    width: 150%;
+    height: 200%;
+    background: linear-gradient(180deg, #f8fbfc, rgb(255, 208, 0));
+    inset: 5px;
+    animation: animate 6s linear infinite;
+    z-index: -2;
+}
+
+@keyframes animate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#servico1::after {
+    content: '';
+    position: absolute;
+    inset: 5px;
+    width: auto;
+    height: auto;
+    z-index: -1; 
+    background:#000000;
+    border-radius: inherit;
+    
+}
+
+
+
+
+
+#servico2 {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    
+    
+}
+
+#servico2::before {
+    content: '';
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    background: linear-gradient(180deg, #f8fbfc, rgb(255, 208, 0));
+    inset: 5px;
+    animation: animate 6s linear infinite;
+    z-index: -2;
+}
+
+@keyframes animate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#servico2::after {
+    content: '';
+    position: absolute;
+    inset: 5px;
+    width: auto;
+    height: auto;
+    z-index: -1; 
+    background:#000000;
+    border-radius: inherit;
+    
+}
+
+#servico3 {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    
+    
+}
+
+#servico3::before {
+    content: '';
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    background: linear-gradient(180deg, #f8fbfc, rgb(255, 208, 0));
+    inset: 5px;
+    animation: animate 6s linear infinite;
+    z-index: -2;
+}
+
+@keyframes animate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#servico3::after {
+    content: '';
+    position: absolute;
+    inset: 5px;
+    width: auto;
+    height: auto;
+    z-index: -1; 
+    background:#000000;
+    border-radius: inherit;
+    
+}
+
+#servico4 {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    
+    
+}
+
+#servico4::before {
+    content: '';
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    background: linear-gradient(180deg, #f8fbfc, rgb(255, 208, 0));
+    inset: 5px;
+    animation: animate 6s linear infinite;
+    z-index: -2;
+}
+
+@keyframes animate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#servico4::after {
+    content: '';
+    position: absolute;
+    inset: 5px;
+    width: auto;
+    height: auto;
+    z-index: -1; 
+    background:#000000;
+    border-radius: inherit;
+    
+}
+
+/* SLIDER */
+
+.slider-container {
+    
+    
+    max-width: 100%; 
+    text-align: center;
+    margin-bottom: 150px;
+    
+    
+  }
+
+  .slider-container h3 {
+    font-size: 30px;
+        color:#EB5C2C;
+  }
+  
+  .slider-wrapper {
+    display: flex;
+
+   
+    
+  }
+  
+  .slide {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+   
+  }
+  
+  .slider-container img {
+    width: 100px;
+    margin: 20px;
+    
+    
+    
+    
+  }
+  
+
+  
+
+/* PACOTE+DIGITAL */
+#pacotes{ 
+    display: block;
+    
+   
+}
+
+.blocospacote {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: left;
+      
+}
+
+
+
+#pacote1, #pacote2, #pacote3 {
+    background-color: #000000;
+    color: white;
+    width: 366px;
+    height: 574px;
+    border-radius: 24px;
+    box-shadow: 7px 9px 4px #636262;
+    margin:30px;       
+    text-align: center;
+
+}
+
+#pacote1 p, #pacote2 p, #pacote3 p {
+    
+    margin: 30px;
+    text-align: left;
+}
+
+
+#pacotes h1{ 
+    color:#000000;
+    text-align: center;
+    font-size: 30px;
+}
+#pacotes .button-container {
+    margin-top: auto; 
+}
+
+#pacotes button {
+    background-color: white;
+    color:#EB5C2C;
+    font-family: 'Poppins';
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#pacotes button:hover {
+    background-color: #EB5C2C;
+    color:white;
+}
+
+#pacote1 button {
+    margin-top: 127px;
+}
+
+
+/* PORTFOLIO */
+
+#portfolio {
+    background-color: #D0D0D0;
+    font-family: 'Poppins';
+    width: 100%;
+    height: 420px;
+    margin-top: 89px;
+    
+}
+
+#portfolio button:hover {
+    background-color: white;
+    color:#EB5C2C;
+    transition: 0.2s;
+}
+
+#portfolio h3 {
+    font-size: 30px;
+    color:#EB5C2C;
+    text-align: left;
+}
+#portfolio img {
+    width: 161px;
+    height: 139px;
+    border-radius: 22px;
+    margin-left: 20px;
+}
+
+
+.part1 {
+    width: 493px;
+    margin-left: 80px;
+
+}
+
+.part2 {
+width: 1028px;
+margin-top: 141px;
+
+    
+}
+
+footer {
+    
+    background-color: black;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+  bottom: 0;
+  text-align: left;
+  
+    
+}
+
+.paragrafo {
+    position: absolute;
+    bottom: 0;
+    left: 50%; 
+    transform: translateX(-50%); 
+    color:white;
+    font-size: 14px;
+    border-top: 1px solid #ffffff;
+    width: 100%;
+   }
+
+   .paragrafo p {
+    left: 50%; 
+    text-align: center;
+    justify-content: center;
+   }
+
+
+.logofooter img {
+
+        max-width: 120px;
+        height: auto;
+    }
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+footer a:hover {
+   
+    color: #EB5C2C;
+    transition: 0.2s;
+}
+
+footer ul {
+    color: white;
+    list-style: none;
+    font-size: 15px;  
+}
+
+.redes {
+    display:flex;
+    
+}
+
+.redes li {
+    margin-left: 10px;
+    font-size: 20px;
+    
+}
+
+
+.parceiros {
+    display: block;
+}
+
+.parceiros img {
+    width: 90px;
+    height: 46px;
+}
+
+/* BTN-ENVELOPE */
+
+#lista-contato {
+    display: none;
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+    position: absolute;
+    background-color: #EB5C2C;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: -100px;
+    right: 100%; 
+    width: 200px;
+    border-radius: 10px;
+  }
+
+  #lista-contato li {
+    margin-bottom: 8px; 
+}
+
+  #lista-contato a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+
+  #lista-contato a:hover {
+
+    color: #000000;
+}
+  #envelope-contato {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    margin: 16px;
+    z-index: 2;
+    display: inline-block;
+    cursor: pointer;
+   
+    
+    
+  }
+
+  .icone-envelope {
+    font-size: 60px;
+    color: #ff4305;
+    text-shadow: 1px 1px 3px rgb(126, 126, 126);
+  }
+  
+  .icone-envelope:hover {
+    
+    color: #118cd3;
+   
+  }
+  
+ 
+/* EFEITO TELA */
+
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 2s;
+    transform: translateX(-100%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transition: all 2s;
+    transform: translateX(0);
+}
+
+.mobileimg {
+    display: none;
+}
+
+
+
+       
+
+
+/* RESPONSIVO */
+
+@media screen and (max-width: 1114px) {
+
+    #tituloprincipal {
+        font-size: 30px
+
+}
+
+}
+
+@media screen and (max-width: 834px) { 
+
+    nav ul {
+
+        justify-content: center;
+    }
+
+    nav li {
+        margin-right: 12px;
+        font-size: 18px;
+    }
+
+    .parceiros img {
+        width: 80px;
+        height: 36px;
+    }
+
+    footer ul {
+
+        font-size: 13px;
+    }
+
+    .imagem img {
+        width: 100%; 
+        min-height: 40vh;
+    }
+
+    .imgquemsomos img {
+        width: 290px;
+        height: 450px;
+        
+        
+    }
+    
+    .txtquemsomos {
+       
+        font-size: 20px;
+        
+        
+    }
+
+    #pacotes{ 
+    display: block;
+    
+   
+}
+
+.blocospacote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+      
+}
+
+.part2 {
+    width: 1028px;
+    margin-top: 80px;
+    
+        
+    }
+ 
+
+}
+
+@media screen and (max-width:768px) {
+
+    nav li {
+        font-size: 1.2rem;
+        margin-top: .7rem;
+    }
+
+    .has-submenu {
+        display: none;
+    }
+
+    .submenu1 {
+
+        display: flex;
+    }
+
+    #btn-responsivo {
+        display: flex;
+        margin: auto;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        margin-right: 4rem;
+
+    }
+
+    .hamburger {
+        color: #ffffff;
+        border-top: 2px solid;
+        width: 20px;
+
+    }
+
+
+    .hamburger::after,
+    .hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        margin-top: 5px;
+        background: currentColor;
+        transition: .3s;
+        position: relative;
+    }
+
+    nav.active .hamburger {
+        border-top-color: transparent;
+    }
+
+    nav.active .hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    nav.active .hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    nav.active ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 20%;
+        visibility: visible;
+        overflow-y: auto;
+        z-index: 1000;
+    }
+
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        width: 100%;
+        top: 58px;
+        right: 0;
+        left: 0;
+        height: 0px;
+        background-color: #000000;
+        color: #ffffff;
+        transition: .6s ease;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    
+    .imagem img {
+        
+        min-height: 52vh;
+    }
+
+
+    #tituloprincipal button {
+        margin-left: 25px;
+    }
+
+    .imgquemsomos img {
+        width: auto;
+        height: auto;
+        
+        
+    }
+
+    #quemsomos {
+        display: block;
+   
+    
+    
+}
+
+.txtquemsomos {
+    display: flex; 
+    flex-direction: column; 
+align-items: center;
+width: 100%;
+
+}
+
+.redes {
+    display: flex;
+}
+
+.parceiros {
+    display: none;
+}
+
+#servico3 {
+    height: auto;
+}
+
+  
+@media screen and (max-width:428px) {
+
+    @media screen and (max-width: 767px) {
+     
+
+    .slider-container img {
+        width: 70px;
+        margin: 5px;
+        
+      }
+
+      .slide {
+        display: inline;
+        width: 100%;
+        
+       
+      }
+
+
+    nav.active ul {
+        height: 10%;
+        
+    }
+
+    .logofooter {
+        display: none;
+    }
+    
+        
+    .redes li {
+        margin-left: 4px;
+        font-size: 17px;
+    
+    }
+
+    .parceiros {
+        display: none;
+    }
+    .contatoeblog {
+        display: none;
+        
+    }
+
+    .logofooter img {
+
+        max-width: 90px;
+        height: auto;
+    }
+
+    footer ul {
+       
+        font-size: 11px;
+    }
+
+    .icone-envelope {
+        font-size: 40px;
+    }
+
+    #envelope-contato {
+        bottom: 20px;
+    }
+   
+    .pcimg {
+        display: none;
+    }
+    .mobileimg {
+        display: flex;
+    }
+
+    #tituloprincipal {
+        font-size: 19px;
+      
+    }
+
+   
+
+    #tituloprincipal h2 {
+        margin-left: 10px;
+        margin-top: 20px;
+        
+    }
+    
+    #tituloprincipal p {
+    font-size: 17px;
+    margin-left: 10px;
+   
+    
+    }
+
+    #tituloprincipal button {
+        font-size: 18px;
+        margin-left: 10px;
+        
+        }
+
+        
+    .imgquemsomos img {
+        width: 90%;
+        height: auto;
+        
+        
+    }
+
+    #quemsomos {
+        display: block;
+   
+    
+    
+}
+
+.txtquemsomos p {
+    display: flex; 
+    flex-direction: column; 
+align-items: center;
+width: 90%;
+
+}
+
+#portfolio {
+   
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.part1 {
+    
+    width: 100%;
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+.part2 {
+    margin-top: 0px;
+    display: block;
+    width: 60%;
+    height: auto;
+    margin-left: 50px;
+    
+}
+
+#portfolio img {
+    width: 91px;
+    height: 78px;
+    
+}
+
+
+#servicos {
+    
+    width: 100%;
+    height: 100%;
+}
+    
+    
+    
+
+.blocos1, .blocos2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+}
+
+#servico2, #servico4 {
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+
+#servico3 {
+    height: 550px;
+}
+
+#servicos button {
+    margin-bottom: 10px;
+
+}
+}
+
+@media screen and (max-width:375px) {
+
+    .part2 {
+        
+        width: 70%;
+        margin-left: 5px;
+       
+    }
+
+    .part1 {
+        margin-left: 30px;
+    }
+
+    
+
+}
+
+@media screen and (max-width:390px) {
+
+   #tituloprincipal {
+    font-size: 16px;
+   }
+
+    #tituloprincipal h2 {
+        margin-left: 10px;
+       
+        
+    }
+
+    #servico1, #servico2, #servico3, #servico4 {
+        width: auto;
+        height: auto;
+
+}
+
+#servicos button {
+    margin-bottom: 15px;
+}
+
+}
+}
+@media screen and (max-width:320px) {
+
+    nav.active ul {
+        height: 5%;
+        
+    }
+
+    footer ul {
+    font-size: 10px;
+
+}
+
+#tituloprincipal h2 {
+    margin-bottom: 20px;
+}
+#tituloprincipal p {
+    display:none;
+}
+
+.part2 {
+        
+    width: 80%;
+    margin-left: 5%;
+   
+   
+}
+
+.part1 {
+    
+    
+    margin-left: 10px;
+   
+}
+
+}
